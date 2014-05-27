@@ -7,3 +7,6 @@ set tabstop=4
 set softtabstop=4
 set expandtab
 
+" Bind new escape key
+imap jk <Esc>
+
