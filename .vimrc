@@ -10,3 +10,6 @@ set expandtab
 " Bind new escape key
 imap jk <Esc>
 
+" Set timeout lengths
+set timeoutlen=250 " quarter-second
+
