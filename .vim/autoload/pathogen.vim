@@ -1,1 +1,1 @@
-/home/csee1/sasha/src/vim-pathogen/autoload/pathogen.vim
+../../../../src/vim-pathogen/autoload/pathogen.vim
