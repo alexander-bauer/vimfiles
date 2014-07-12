@@ -29,5 +29,9 @@ nnoremap <silent> <C-l> :nohl<CR><C-l>
 " Bind new escape key
 imap jk <Esc>
 
+" Bind key to reformat paragraphs
+map Q gq
+vmap Q gq
+
 " Bind Tabular key
 map T :Tabular block<CR>
