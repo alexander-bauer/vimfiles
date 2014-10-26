@@ -21,6 +21,12 @@ set expandtab
 " Set timeout lengths
 set timeoutlen=250 " quarter-second
 
+" Configure lightline
+let g:lightline = {
+    \ 'colorscheme': 'wombat'
+    \ }
+set laststatus=2
+
 " Bind some keys
 
 " <Ctrl-l> redraws the screen and removes any search highlighting.
