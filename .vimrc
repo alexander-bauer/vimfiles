@@ -41,3 +41,22 @@ vmap Q gq
 
 " Bind Tabular key
 map T :Tabular block<CR>
+
+" Bind keys for adding newlines easily
+nmap <S-Enter> O<Esc>j
+nmap <CR> o<Esc>k
+
+" Bind utility keys
+nmap \l :setlocal number!<CR>
+nmap \o :set paste!<CR>
+nmap \s :setlocal spell! spelllang=en_us<CR>
+
+" Bind buffer switching keys
+nmap <C-e> :edit 
+nmap <C-l> :buffer#<CR>
+nmap <C-n> :bnext<CR>
+nmap <C-p> :bprev<CR>
+
+" Bind mark jumping keys
+nmap <C-j> :lnext<CR>
+nmap <C-k> :lprev<CR>
