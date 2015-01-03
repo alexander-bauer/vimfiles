@@ -30,10 +30,11 @@ set laststatus=2
 " Bind some keys
 
 " <Ctrl-l> redraws the screen and removes any search highlighting.
-nnoremap <silent> <C-l> :nohl<CR><C-l>
+nnoremap <silent> <C-j> :nohl<CR><C-l>
 
-" Bind new escape key
+" Bind new escape keys
 imap jk <Esc>
+imap <C-l> <Esc>:
 
 " Bind key to reformat paragraphs
 map Q gq
