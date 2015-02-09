@@ -110,10 +110,13 @@ map T :Tabular block<CR>
 nmap <S-Enter> O<Esc>j
 nmap <CR> o<Esc>k
 
+" Set the leader key
+let mapleader=","
+
 " Bind utility keys
-nmap <silent> \l :call NumberToggle()<CR>
-nmap <silent> \o :set paste!<CR>
-nmap <silent> \s :setlocal spell! spelllang=en_us<CR>
+nmap <silent> <leader>l :call NumberToggle()<CR>
+nmap <silent> <leader>o :set paste!<CR>
+nmap <silent> <leader>s :setlocal spell! spelllang=en_us<CR>
 
 " Bind buffer switching keys
 nmap <C-e> :edit 
