@@ -8,6 +8,12 @@ syntax on
 filetype on
 filetype plugin indent on
 
+" Disable compatibility mode (I'm not a native vi user)
+set nocompatible
+
+" Disable modelines, which could potentially be malicious.
+set modelines=0
+
 " Also, set the colorscheme.
 colorscheme gotham256
 
