@@ -63,6 +63,9 @@ call NumberToggle("rnum")
 set textwidth=72
 set formatoptions+=t
 
+" Use 'smart' case searching
+set smartcase
+
 " Set tab widths and behavior sanely
 set shiftwidth=4
 set tabstop=4
@@ -91,6 +94,9 @@ imap <C-l> <Esc>:
 map Q gq
 vmap Q gq
 
+" Use Y to yank to the end of the line
+nmap Y y$
+
 " Bind Tabular key
 map T :Tabular block<CR>
 
@@ -105,6 +111,7 @@ nmap <silent> \s :setlocal spell! spelllang=en_us<CR>
 
 " Bind buffer switching keys
 nmap <C-e> :edit 
+nnoremap <C-o> :NERDTreeToggle<CR>
 nmap <C-l> :buffer#<CR>
 nmap <C-n> :bnext<CR>
 nmap <C-p> :bprev<CR>
