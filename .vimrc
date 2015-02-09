@@ -96,10 +96,6 @@ nnoremap <silent> <C-j> :nohl<CR><C-l>
 imap jk <Esc>
 imap <C-l> <Esc>:
 
-" Bind key to reformat paragraphs
-map Q gq
-vmap Q gq
-
 " Use Y to yank to the end of the line
 nmap Y y$
 
@@ -117,6 +113,10 @@ let mapleader=","
 nmap <silent> <leader>l :call NumberToggle()<CR>
 nmap <silent> <leader>o :set paste!<CR>
 nmap <silent> <leader>s :setlocal spell! spelllang=en_us<CR>
+
+" Bind key to reformat paragraphs
+map <silent> <leader>q gq
+vmap <silent> <leader>q gq
 
 " Bind buffer switching keys
 nmap <C-e> :edit 
