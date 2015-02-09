@@ -8,8 +8,56 @@ syntax on
 filetype on
 filetype plugin indent on
 
+" Make line numbers easy to deal with, and enable relative line numbers
+function! NumberToggle(...)
+  if a:0 > 0
+    let l:setstate = a:1
+  else
+    let l:setstate = "next"
+  endif
+
+  if(l:setstate == "next")
+    if &relativenumber == 1
+      set norelativenumber
+      set number
+    elseif &number == 1
+      set nonumber
+      set relativenumber
+    else
+      set nonumber
+      set norelativenumber
+    endif
+
+  elseif(l:setstate == "num")
+    set norelativenumber
+    set number
+  elseif(l:setstate == "rnum")
+    set nonumber
+    set relativenumber
+  else
+    set nonumber
+    set norelativenumber
+  endif
+endfunction
+
+" Automatically toggle between relative and absolute numbers depending
+" on window context.
+" Switch to absolute line numbers when the window loses focus and
+" switch back
+" to relative line numbers when the focus is regained.
+autocmd WinLeave * :call NumberToggle("num")
+autocmd WinEnter * :call NumberToggle("rnum")
+autocmd FocusLost * :call NumberToggle("num")
+autocmd FocusGained * :call NumberToggle("rnum")
+
+autocmd InsertEnter * :call NumberToggle("num")
+autocmd InsertLeave * :call NumberToggle("rnum")
+
+call NumberToggle("rnum")
+
+
 " Wrap text to 72 characters automatically
-set tw=72
+set textwidth=72
 set formatoptions+=t
 
 " Set tab widths and behavior sanely
@@ -48,9 +96,9 @@ nmap <S-Enter> O<Esc>j
 nmap <CR> o<Esc>k
 
 " Bind utility keys
-nmap \l :setlocal number!<CR>
-nmap \o :set paste!<CR>
-nmap \s :setlocal spell! spelllang=en_us<CR>
+nmap <silent> \l :call NumberToggle()<CR>
+nmap <silent> \o :set paste!<CR>
+nmap <silent> \s :setlocal spell! spelllang=en_us<CR>
 
 " Bind buffer switching keys
 nmap <C-e> :edit 
