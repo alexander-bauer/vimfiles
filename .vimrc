@@ -8,6 +8,9 @@ syntax on
 filetype on
 filetype plugin indent on
 
+" Also, set the colorscheme.
+colorscheme gotham256
+
 " Make line numbers easy to deal with, and enable relative line numbers
 function! NumberToggle(...)
   if a:0 > 0
