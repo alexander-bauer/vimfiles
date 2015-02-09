@@ -45,17 +45,17 @@ endfunction
 
 " Automatically toggle between relative and absolute numbers depending
 " on window context.
-" Switch to absolute line numbers when the window loses focus and
-" switch back
-" to relative line numbers when the focus is regained.
-autocmd WinLeave * :call NumberToggle("num")
-autocmd WinEnter * :call NumberToggle("rnum")
-autocmd FocusLost * :call NumberToggle("num")
-autocmd FocusGained * :call NumberToggle("rnum")
+" autocmd WinLeave * :call NumberToggle("num")
+" autocmd WinEnter * :call NumberToggle("rnum")
+" autocmd FocusLost * :call NumberToggle("num")
+" autocmd FocusGained * :call NumberToggle("rnum")
 
+" Automatically switch to absolute numbers when inserting, and relative
+" in normal mode.
 autocmd InsertEnter * :call NumberToggle("num")
 autocmd InsertLeave * :call NumberToggle("rnum")
 
+" Use relative numbers by default.
 call NumberToggle("rnum")
 
 
