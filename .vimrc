@@ -110,9 +110,16 @@ nmap <CR> o<Esc>k
 let mapleader=","
 
 " Bind utility keys
-nmap <silent> <leader>l :call NumberToggle()<CR>
+
+" Toggle paste and spelling modes
 nmap <silent> <leader>o :set paste!<CR>
 nmap <silent> <leader>s :setlocal spell! spelllang=en_us<CR>
+
+" Insert just one character
+nmap <silent> <leader>i :exec "normal i".nr2char(getchar())."\e"<CR>
+
+" Toggle number lines
+nmap <silent> <leader>l :call NumberToggle()<CR>
 
 " Bind key to reformat paragraphs
 map <silent> <leader>q gq
