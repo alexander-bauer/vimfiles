@@ -65,8 +65,8 @@ autocmd InsertLeave * :call NumberToggle("rnum")
 call NumberToggle("rnum")
 
 
-" Wrap text to 72 characters automatically
-set textwidth=72
+" Wrap text to 80 characters automatically
+set textwidth=80
 set formatoptions+=t
 
 " Use 'smart' case searching
