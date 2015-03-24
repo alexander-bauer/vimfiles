@@ -135,3 +135,5 @@ nmap <C-p> :bprev<CR>
 " Bind mark jumping keys
 nmap <C-j> :lnext<CR>
 nmap <C-k> :lprev<CR>
+
+imap <C-Space> <C-X><C-O>
