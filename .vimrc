@@ -96,6 +96,16 @@ nnoremap <silent> <C-j> :nohl<CR><C-l>
 imap jk <Esc>
 imap <C-l> <Esc>:
 
+" When entering insert or visual mode, set a mark.
+nnoremap i m`i
+nnoremap I m`I
+nnoremap v m`v
+nnoremap V m`V
+nnoremap s m`s
+" When escaping using JK, or from visual mode, return to the mark.
+inoremap JK <Esc>``
+vnoremap <Esc> <Esc>``
+
 " Use Y to yank to the end of the line
 nmap Y y$
 
