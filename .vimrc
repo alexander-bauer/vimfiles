@@ -126,7 +126,8 @@ nmap <silent> <leader>o :set paste!<CR>
 nmap <silent> <leader>s :setlocal spell! spelllang=en_us<CR>
 
 " Insert just one character
-nmap <silent> <leader>i :exec "normal i".nr2char(getchar())."\e"<CR>
+nmap <silent> <C-i> :exec "normal i".nr2char(getchar())."\e"<CR>
+" nmap <silent> <leader>i :exec "normal i".nr2char(getchar())."\e"<CR>
 
 " Toggle number lines
 nmap <silent> <leader>l :call NumberToggle()<CR>
