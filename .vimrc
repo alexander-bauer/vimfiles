@@ -143,7 +143,7 @@ vmap <silent> <leader>q gq
 " Bind buffer switching keys
 nmap <C-e> :edit 
 nnoremap <C-o> :NERDTreeToggle<CR>
-nnoremap <C-u> :GundoToggle<CR>
+nnoremap U :GundoToggle<CR>
 nmap <C-l> :buffer#<CR>
 nmap <C-n> :bnext<CR>
 nmap <C-p> :bprev<CR>
