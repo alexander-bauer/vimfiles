@@ -14,6 +14,10 @@ set nocompatible
 " Disable modelines, which could potentially be malicious.
 set modelines=0
 
+" Keep persistent undo states
+set undodir=$HOME/.vim/undo
+set undolevels=1000
+
 " Also, set the colorscheme.
 colorscheme gotham256
 
@@ -139,6 +143,7 @@ vmap <silent> <leader>q gq
 " Bind buffer switching keys
 nmap <C-e> :edit 
 nnoremap <C-o> :NERDTreeToggle<CR>
+nnoremap <C-u> :GundoToggle<CR>
 nmap <C-l> :buffer#<CR>
 nmap <C-n> :bnext<CR>
 nmap <C-p> :bprev<CR>
