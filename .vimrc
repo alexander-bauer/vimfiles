@@ -142,6 +142,8 @@ vmap <silent> <leader>q gq
 
 " Bind buffer switching keys
 nmap <C-e> :edit 
+nnoremap <C-g> :Gstatus<CR>
+nnoremap <C-c> :Gcommit<CR>
 nnoremap <C-o> :NERDTreeToggle<CR>
 nnoremap U :GundoToggle<CR>
 nmap <C-l> :buffer#<CR>
