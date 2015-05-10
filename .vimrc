@@ -91,6 +91,11 @@ let g:lightline = {
     \ }
 set laststatus=2
 
+" Configure zenmode
+let g:zenmode_background  = "dark"
+let g:zenmode_colorscheme = "desert"
+let g:zenmode_font        = "Cousine 16"
+
 " Bind some keys
 
 " <Ctrl-l> redraws the screen and removes any search highlighting.
