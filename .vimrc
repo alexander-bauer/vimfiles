@@ -22,7 +22,13 @@ set undolevels=1000
 colorscheme gotham256
 
 " Make line numbers easy to deal with, and enable relative line numbers
+let g:anynumber = 1
 function! NumberToggle(...)
+  if(g:anynumber == 0)
+      set nonumber
+      set norelativenumber
+  endif
+
   if a:0 > 0
     let l:setstate = a:1
   else
@@ -117,6 +123,9 @@ vnoremap <Esc> <Esc>``
 
 " Use Y to yank to the end of the line
 nmap Y y$
+
+" When pasting from visual mode, blackhole the selection first.
+xnoremap p "_dP
 
 " Bind Tabular key
 map T :Tabular block<CR>
