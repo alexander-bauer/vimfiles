@@ -128,7 +128,7 @@ nmap Y y$
 xnoremap p "_dP
 
 " Bind Tabular key
-map T :Tabular block<CR>
+map T :Tabular 
 
 " Bind keys for adding newlines easily
 nmap <S-Enter> O<Esc>j
