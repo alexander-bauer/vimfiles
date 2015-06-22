@@ -82,6 +82,9 @@ set formatoptions+=t
 " Use 'smart' case searching
 set smartcase
 
+" Automatically save when switching buffers
+set autowrite
+
 " Set tab widths and behavior sanely
 set shiftwidth=4
 set tabstop=4
