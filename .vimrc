@@ -135,7 +135,7 @@ nmap <S-Enter> O<Esc>j
 nmap <CR> o<Esc>k
 
 " Set the leader key
-let mapleader=","
+let mapleader=" "
 
 " Bind utility keys
 
