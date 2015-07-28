@@ -126,8 +126,11 @@ nnoremap s m`s
 inoremap JK <Esc>``
 vnoremap <Esc> <Esc>``
 
-" Use Y to yank to the end of the line
+" Use Y to yank to the end of the line.
 nmap Y y$
+
+" Use X to delete the entire contents of the line.
+nmap X 0D
 
 " When pasting from visual mode, blackhole the selection first.
 xnoremap p "_dP
