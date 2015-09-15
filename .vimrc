@@ -136,7 +136,16 @@ nmap X 0D
 xnoremap p "_dP
 
 " Bind Tabular key
-map T :Tabular 
+if exists(":Tabularize")
+    map T :Tabular
+    nmap <Leader>t= :Tabularize /=<CR>
+    vmap <Leader>t= :Tabularize /=<CR>
+    nmap <Leader>t: :Tabularize /:\zs<CR>
+    vmap <Leader>t: :Tabularize /:\zs<CR>
+    nmap <Leader>t; :Tabularize /;<CR>
+    vmap <Leader>t; :Tabularize /;<CR>
+endif
+
 
 " Bind keys for adding newlines easily
 nmap <S-Enter> O<Esc>j
