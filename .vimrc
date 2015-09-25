@@ -75,7 +75,7 @@ autocmd InsertLeave * :call NumberToggle("rnum")
 call NumberToggle("rnum")
 
 " Automatically exit insert mode after a few seconds of inactivity
-autocmd CursorHoldI * stopinsert
+"autocmd CursorHoldI * stopinsert
 
 " Wrap text to 80 characters automatically
 set textwidth=80
