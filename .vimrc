@@ -18,6 +18,9 @@ set modelines=0
 set undodir=$HOME/.vim/undo
 set undolevels=1000
 
+" Keep some lines of context.
+set scrolloff=3
+
 " Also, set the colorscheme.
 colorscheme slate
 
