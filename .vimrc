@@ -19,7 +19,7 @@ set undodir=$HOME/.vim/undo
 set undolevels=1000
 
 " Also, set the colorscheme.
-colorscheme gotham256
+colorscheme slate
 
 " Make line numbers easy to deal with, and enable relative line numbers
 let g:anynumber = 1
