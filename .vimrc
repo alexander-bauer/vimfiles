@@ -1,3 +1,5 @@
+set runtimepath^=/usr/share/vim/vimfiles/
+
 " Load up pathogen
 execute pathogen#infect()
 
