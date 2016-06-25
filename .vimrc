@@ -173,6 +173,9 @@ nmap <silent> <leader>l :call NumberToggle()<CR>
 map <silent> <leader>q gq
 vmap <silent> <leader>q gq
 
+" Bind key to sort paragraphs
+map <silent> <leader>s vip :sort<CR>
+
 " Bind buffer switching keys
 nmap <C-e> :edit 
 nnoremap <C-g> :Gstatus<CR>
